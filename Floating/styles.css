@@ -1,27 +1,21 @@
 #left{
     background-color: aqua;
-    padding: 20px;
-    width: 30%;
-    float: left;
+    margin: 2px;
+    flex-grow: 1;
     
 }
 #right{
     background-color: blue;
-    padding: 20px;
-    width: 30%;
-    float: right;
-    margin-left: 10px;
-    position: relative;
-    right: 150px;
-    z-index: 0;
+    margin: 2px;
+    flex-grow: 4;
+    
 }
 #center{
     background-color: crimson;
-    padding: 20px;
-    width: 30%;
-    float: right;
-    z-index: 1;
-}
+    margin: 2px;
+    display: flex;
+    flex-grow: 5;
+    
 #menu li{
     display: inline;
     padding: 10px;
@@ -29,6 +23,7 @@
 }
 #container{
     border: 2px solid green;
-    padding: 20px;
+    display: flex;
+    padding: 2px;
     overflow: hidden;
 }
