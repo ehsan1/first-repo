@@ -10,8 +10,64 @@
 </head>
 <body class="container">
     <h1>Recipies API Client</h1>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text"
+        class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="">
+      <small id="titleHelp" class="form-text text-muted">Enter Title of the Recipie</small>
+    </div>
+    <div class="form-group">
+      <label for="body">Body</label>
+      <input type="text"
+        class="form-control" name="body" id="body" aria-describedby="bodyHelp" placeholder="">
+      <small id="bodyHelp" class="form-text text-muted">Enter details</small>
+    </div>
+    <button id="addBtn" class="btn btn-primary ">Add Recipeis</button>
     <div id="recipes">
         Loading ..........
+    </div>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#updateModal">
+      Launch
+    </button>
+     -->
+    <!-- Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Update Record</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                   <input type="hidden" id="updateId"> <br>
+                   <div class="form-group">
+                     <label for="updateTitle">Title</label>
+                     <input type="text"
+                       class="form-control" name="updateTitle" id="updateTitle" aria-describedby="updateTitleHelp" placeholder="Title">
+                     <small id="updateTitleHelp" class="form-text text-muted">Title of the recipe</small>
+                   </div>
+                   <div class="form-group">
+                     <label for="updateBody">Body</label>
+                     <textarea class="form-control" name="updateBody" id="updateBody" rows="5"></textarea>
+                   </div>
+                   <!-- <div class="form-group">
+                    <label for="updateBody">Body</label>
+                    <input type="textarea"
+                      class="form-control" name="updateBody" id="updateBody" aria-describedby="updateBodyHelp" placeholder="Title">
+                    <small id="updateBodyHelp" class="form-text text-muted">Recipe details</small>
+                  </div> -->
+                  
+                   
+                </div>
+                <div class="modal-footer">
+                    <button id="updateSave"  class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
